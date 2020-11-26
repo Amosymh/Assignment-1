@@ -1,13 +1,20 @@
 .logoimg{
-    width:80px;
-    height:80px; 
-    left: 60px;
+    width:70px;
+    height:70px; 
+    left: 20px;
     top: 20px;
     position: absolute;
     border-radius: 50%;
+    display:flex;
+	flex-grow: 1;
+	flex-basis: 15%;
 }
 .image{
     width: 100%;
+}
+
+.guardianimages{
+    width: 30%;
 }
 h1{
     font-family: 'Raleway', sans-serif;
@@ -21,6 +28,13 @@ h2{
     text-align: center;
     font-size: 40px;
 }
+
+h3{
+    font-family: 'Zhi Mang Xing', cursive;
+    text-align: center;
+    font-size: 90px;
+    color: black;
+}
 body{
     background-size: cover;
     color : cyan;
@@ -28,46 +42,213 @@ body{
     margin: 0;
     padding: 0;
 } 
-header{
+nav{
     display:flex;
     justify-content: space-evenly;
-    background:blue;
+    background: rgba(97, 85, 139, 0.829);
     padding:40px;
-    height:40px;
+    height:20px;
+    position: -webkit-sticky;
+    position:sticky;
+    top:0;
+    z-index: 200;
+}
+
+
+footer{
+    background:rgb(44, 43, 43);
+    padding: 10px 20px;
 }
 
 div{
     margin:auto;
     width:150px;
     font-size: 30px;
-}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-li{
-    display: inline-block;
-    margin-right: 20px;
-}
-footer{
-    background:black;
-    padding: 10px 20px;
-}
-
-div{
     word-wrap: none;
     width:80%;
     text-align: center;
 }
+.contact-form {
+    background-color: black;
+    width:300px;
+    padding:20px;
+    margin: 50px auto;    
+    border: 6px solid rgb(24, 71, 71);
+    border-radius:15px;
+    position:relative;
+}
 
-.hyperlinkcss{
-    color:cyan;
-    text-decoration: none;
+label{
     font-size: 30px;
 }
 
-.guardianbox{
-    display:flex;
-    justify-content: space-;
+.InputText{
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+input{
+    height: 30px;
+    width: 300px;
+}
+
+.SubmitButton{
+    height:50px;
+    width: 150px;
+    font-size: 15px;
+    background-color: cadetblue;
+}
+.hyperlinkcss{
+    color:cyan;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.FlexContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.flex-width img {
+    max-width: 100%;
+}
+.flexItem{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexInfo{
+    margin-top: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .logoimg{
+        width:30px;
+        height:30px; 
+        left: 10px;
+        top: 10px;
+        position: absolute;
+        border-radius: 50%;
+        display:flex;
+        flex-grow: 1;
+        flex-basis: 15%;
+    }
+    .image{
+        width: 100%;
+    }
+    
+    .guardianimages{
+        width: 30%;
+    }
+    h1{
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+    }
+    
+    h2{
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    h3{
+        font-family: 'Zhi Mang Xing', cursive;
+        text-align: center;
+        font-size: 90px;
+        color:cyan;
+    }
+    body{
+        background-image: url("Pictures/galaxy.jpg");
+        background-size: cover;
+        color : cyan;
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    } 
+    nav{
+        display:flex;
+        justify-content: space-evenly;
+        background: rgba(97, 85, 139, 0.829);
+        padding:20px;
+        height:10px;
+        position: -webkit-sticky;
+        position:sticky;
+        top:0;
+        z-index: 200;
+    }
+    
+    
+    footer{
+        background:rgb(44, 43, 43);
+        padding: 10px 20px;
+    }
+    
+    div{
+        margin:auto;
+        width:150px;
+        font-size: 20px;
+        word-wrap: none;
+        width:80%;
+        text-align: center;
+    }
+    .contact-form {
+        background-color: black;
+        width:300px;
+        padding:20px;
+        margin: 50px auto;    
+        border: 6px solid rgb(24, 71, 71);
+        border-radius:15px;
+        position:relative;
+    }
+    
+    label{
+        font-size: 30px;
+    }
+    
+    .InputText{
+        color: blue;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+    }
+    
+    input{
+        height: 30px;
+        width: 300px;
+    }
+    
+    .SubmitButton{
+        height:50px;
+        width: 150px;
+        font-size: 15px;
+        background-color: cadetblue;
+    }
+    .hyperlinkcss{
+        color:cyan;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    
+    .FlexContainer{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .flex-width img {
+        max-width: 100%;
+    }
+    .flexItem{
+        padding: 2%;
+        flex-grow: 1;
+        flex-basis: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flexInfo{
+        margin-top: auto;
+    }
 }
